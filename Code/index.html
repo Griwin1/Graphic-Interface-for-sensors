@@ -8,13 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+    <div class="clouds">
+      <div class="clouds-1"></div>
+      <div class="clouds-2"></div>
+      <div class="clouds-3"></div>
+    </div>
+    
     <div class="container-fluid container text-center">
-      <div class="container-fluid">
+      <div class="container-fluid fs-1">
         <h1>Измервателна станция</h1>
-        <p>Име и фамилия: [Вашето име и фамилия]</p>
+        <p>Име и фамилия: Никола Орловски</p>
       </div>
       <table class="table"></table>
       <div class="container">
@@ -28,40 +34,59 @@
         <p>Статус на системата: Neaktiven(baven)</p>
       </div>
 
+    </div>
+
       <!-- Footer -->
-      <footer
-        class="bg-primary  footer fixed-bottom text-center text-lg-start text-white"
-      >
-        <!-- Grid container -->
-        <div class="container p-4">
+      <footer class="bg-primary footer fixed-bottom text-start text-white"> 
+      <!-- Grid container -->
+      <div class="container">
+        <div class="row mt-4 mb-5">
           <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Linkedin -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #0082ca"
-              href="https://www.linkedin.com/in/nikola-orlovski-7b3257221/"
-              role="button"
-              ><i class="fab fa-linkedin-in">Linkedin</i></a
-            >
-            <!-- Github -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #333333"
-              href="https://github.com/Griwin1"
-              role="button"
-              ><i class="fab fa-github">Github</i></a
-            >
+          <section class="col-lg-6 col-xl-6 col-sm-12 d-inline-flex">
+            <div class="brand-logo mr-4">
+              <a href="https://www.tu-sofia.bg/">
+                <img class="img-responsive" src="Tu-sofia-logo.svg.png" alt="TU-Sofia" width="40%" height="40%">
+              </a>
+            </div>
+            <div class="social-links mt-4 text-center">
+                <!-- Linkedin -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #0082ca"
+                href="https://www.linkedin.com/in/nikola-orlovski-7b3257221/"
+                role="button"
+                ><i class="fab fa-linkedin-in">LinkedIn</i></a
+                >
+                <!-- Github -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #333333"
+                href="https://github.com/Griwin1"
+                role="button"
+                ><i class="fab fa-github">Github</i></a
+                >
+                <!-- Github -->
+                <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #833AB4" 
+                href="https://www.instagram.com/orlovski.nikola/?theme=dark"
+                role="button"
+                ><i class="fab fa-github">Instagram</i></a
+                >
+                
+            </div>
           </section>
           <!-- Section: Social media -->
 
           <!-- Section: Form -->
-          <section class="">
+          <section class="col-lg-3 col-xl-3 col-sm-12">
             <form action="">
               <!--Grid row-->
               <div class="row d-flex justify-content-center">
                 <!--Grid column-->
-
+                <label for="InputEmail">Абонамент</label>
+                <p>Абонирайте се за нас и ще получавате повече информацията от нашите сензори!</p>
+                <input type="email" class="form-control" placeholder="Email">
               </div>
               <!--Grid row-->
             </form>
@@ -69,30 +94,40 @@
           <!-- Section: Form -->
 
           <!-- Section: Text -->
-          <section class="mb-4">
+          <!-- <section class="col-3">
             <p>
-             Калина е тъпа
+              Калина е тъпа
+            </p>
+          </section> -->
+
+          <section class="col-lg-3 col-xl-3 col-sm-12 text-end">
+            <p>
+              Technical University of Sofia
+              <br> Faculty of Industrial technology
             </p>
           </section>
           <!-- Section: Text -->
         </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
-        <div
-        
-          class="fixed-bottom text-center" 
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          © 2024 Copyright:
-          <a class="text-white">Nikola The Developer</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
-    </div>
+       
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+      
+        class="fixed-bottom text-center" 
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2024 Copyright:
+        <a class="text-white .fs-6 text">Nikola The Developer</a>
+      </div>
+      <!-- Copyright -->
+      
+    </footer>
+    <!-- Footer -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+/* Import Compass CSS3 module */
+@import "compass/css3";
+/* Import Google font */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 body{
   height: 100%;
-  background-image: url("768x432.jpg");
+  /*background-image: url("768x432.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
-
-	color:#0004f8;
+	color:#fdfdfd;
 }
 .center
 {
@@ -21,4 +24,104 @@ canvas {
 }
 .container p-4{
   padding: 5rem;
+}
+.clouds-1 {
+  background-image: url("https://s.cdpn.io/15514/clouds_2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 500px;
+  animation: clouds-loop-1 30s infinite linear;
+}
+
+.clouds-2 {
+  background-image: url("https://s.cdpn.io/15514/clouds_1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 500px;
+  animation: clouds-loop-2 35s infinite linear;
+}
+
+.clouds-3 {
+  background-image: url("https://s.cdpn.io/15514/clouds_3.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 500px;
+  animation: clouds-loop-3 30s infinite linear;
+}
+
+/* Keyframes */
+@keyframes clouds-loop-1 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+@keyframes clouds-loop-2 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+@keyframes clouds-loop-3 {
+  to {
+    background-position: -1579px 0;
+  }
+}
+
+/* General styles */
+html, body {
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(#333, #000);
+  text-align: center;
+  vertical-align: middle;
+}
+
+body a {
+  color: #b8956b;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-shadow: 0 -1px 0 rgba(204, 163, 98, 0.6), 0 2px 3px #000;
+}
+
+body a span {
+  display: block;
+}
+
+.clouds {
+  z-index: -1;
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+  
+.brand-logo img {
+  margin: 0 30px;
 }
